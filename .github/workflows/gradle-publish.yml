@@ -44,6 +44,3 @@ jobs:
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.3.1
-      with:
-        # Artifact name
-        name: 'Smartphone'
