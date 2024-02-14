@@ -1,4 +1,4 @@
-package atividade;
+package com.example;
 
 public class Aplicativo {
     private String nome;

@@ -1,4 +1,4 @@
-package atividade;
+package com.example;
 
 public class Componente {
     private String descricao;

@@ -1,4 +1,4 @@
-package atividade;
+package com.example;
 
 import java.util.Scanner;
 import java.util.Arrays;
