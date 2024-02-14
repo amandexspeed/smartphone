@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
-public class SmartphoneApp {
+public class SmartphoneApp  {
     
     public static Scanner scn = new Scanner(System.in);
 

@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "demo\\target\\classes",
+        "demo\\src\\main\\java"
+    ]
+}
