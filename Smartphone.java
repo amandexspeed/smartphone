@@ -270,20 +270,17 @@ public class Smartphone {
     }
 
     public void adicionarComponente(Componente componente) {
-        if(isLigado()){
+        
             if (getQuantidadeComponentesInstalados() < getQuantidadeMaximaComponentes()) {
                 componentes[quantidadeComponentesInstalados++] = componente;
                 System.out.println("Componente adicionado com sucesso");
             } else {
                 System.out.println("Limite máximo de componentes atingido.");
             }
-        }else{
-            System.out.println("Celular desligado!");
-		}
+
     }
 
     public void adicionarAplicativo(Aplicativo aplicativo){
-        if(isLigado()){
             if(getQuantidadeAplicativosInstalados() < getQuantidadeMaxAplicativos()){
                 if(armazenamentoUsado+aplicativo.getTamanho() > capacidadeDisco){
                     System.out.println("Não é possível instalar o aplicativo. Capacidade do disco insuficiente.");
@@ -296,9 +293,7 @@ public class Smartphone {
             }else {
                 System.out.println("Limite máximo de aplicativos atingido.");
             }
-        }else{
-            System.out.println("Celular desligado!");
-        }
+        
     }
     
     public void removerComponente(String nome){
