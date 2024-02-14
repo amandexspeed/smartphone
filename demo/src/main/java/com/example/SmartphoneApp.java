@@ -27,13 +27,25 @@ public class SmartphoneApp  {
         System.out.println("Digite o nivel de bateria do celular: ");
         int nivelBateria = scn.nextInt();
 
+        if(nivelBateria<0){
+
+            System.out.println("Não aceitamos nível de bateria negativo. Vamos deixar em 0");
+            nivelBateria = 0;
+
+        }
+
+        boolean ligado = false;
+
+        if(nivelBateria>0){
+
         scn.nextLine();
         System.out.println("Digite se o celular esta ligado (s/n): ");
-        boolean ligado = false;
+        
         char estado = scn.nextLine().charAt(0);
         if(estado=='S'|| estado=='s')
             ligado = true;
-
+            
+        }
         //(boolean ligado, int quantidadeMaxAplicativos, int quantidadeMaxComponentes)
 
         System.out.println("Digite a quantidade máxima de aplicativos:");
