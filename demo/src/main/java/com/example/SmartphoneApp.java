@@ -253,6 +253,8 @@ public class SmartphoneApp  {
                     double consumo = scn.nextDouble();
                     Aplicativo apps[] = smartphone.buscarAplicativo(consumo);
 
+                    System.out.println("Aplicativos que fazem esse consumo de energia:");
+
                     for(Aplicativo app : apps)
                         if (app!=null)
                         System.out.println(app.toString());
